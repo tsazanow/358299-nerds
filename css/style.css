@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   color: #283136;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
 }
 
 h1.slider-title,
@@ -12,22 +12,16 @@ h1.catalog-title {
   font-size: 55px;
   line-height: 55px;
   color: black;
-  font-weight: normal;
-  font-family: "Roboto", sans-serif;
 }
 
 h3.features-title {
   font-size: 24px;
   line-height: 30px;
   color: black;
-  font-weight: normal;
-  font-family: "Roboto", sans-serif;
 }
 
 h3.footer-title {
   font-size: 36px;
   line-height: 36px;
   color: black;
-  font-weight: normal;
-  font-family: "Roboto", sans-serif;
 }
