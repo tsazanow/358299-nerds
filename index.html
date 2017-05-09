@@ -5,6 +5,7 @@
     <title>Нёрдс</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="nav-header">
@@ -23,40 +24,35 @@
     </header>
     <header class="slider-header">
       <div class="container">
-        <div class="slider clearfix">
-          <div class="slider-left-1">
-            <h1 class="slider-title">Долго, дорого, скрупулезно</h1>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button" href="#">Узнать больше</a>
+        <div class="slider">
+          <div class="slider-switch">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="slider-right-1">
-            <img src="img/slide1.png" width="760" height="431" alt="Слайд1">
+          <div class="slides">
+            <div class="slider-banner">
+              <div class="slider-text">
+                <h1 class="slider-title">Долго, дорого, скрупулезно.</h1>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="button" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slider-banner">
+              <div class="slider-text">
+                <h1 class="slider-title">Любим математику как никто другой.</h1>
+                <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+                <a class="button" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slider-banner">
+              <div class="slider-text">
+                <h1 class="slider-title">Только ночь, только хардкор.</h1>
+                <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                <a class="button" href="#">Узнать больше</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="slider clearfix">
-          <div class="slider-left-2">
-            <h1 class="slider-title">Любим математику как никто другой</h1>
-              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="button" href="#">Узнать больше</a>
-          </div>
-          <div class="slider-right-2">
-            <img src="img/slide2.png" width="760" height="431" alt="Слайд2">
-          </div>
-        </div>
-        <div class="slider clearfix">
-          <div class="slider-left-3">
-            <h1 class="slider-title">Только ночь, только хардкор</h1>
-              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-              <a class="button" href="#">Узнать больше</a>
-          </div>
-          <div class="slider-right-3">
-            <img src="img/slide3.png" width="760" height="431" alt="Слайд3">
-          </div>
-        </div>
-        <div class="slider-bullit">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
         </div>
       </div>
     </header>
@@ -67,13 +63,13 @@
           <div class="features-item">
             <img src="img/adv1.jpg" width="300" height="146" alt="Веб-сайты">
             <h3 class="features-title">Веб-сайты</h3>
-            <p>Мир никогда не будет прежним, после того как вы увидите ваш сайт!</p>
+            <p>Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
             <a class="button red" href="#">Заказать</a>
           </div>
           <div class="features-item">
             <img src="img/adv2.jpg" width="300" height="146" alt="Приложения">
             <h3 class="features-title">Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <p>Покорите топ-10 приложений в App Store и Google Play</p>
             <a class="button green" href="#">Заказать</a>
           </div>
           <div class="features-item">
@@ -88,7 +84,7 @@
       <!-- Основной блок о компании -->
         <section class="about clearfix">
           <div class="about-left">
-            <h2 class="about-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
+            <h2 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы</p>
             <div class="about-jobs">
               <b>Выполняем заказы на разработку:</b>
@@ -124,7 +120,7 @@
       <!-- Список партнеров -->
       <div class="container">
         <section class="partners clearfix">
-            <ul class="partners-list">
+          <ul class="partners-list">
             <li>
               <div class="partner-1">
                 <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/partner-academy.png" width="199" height="68" alt="HTML Academy"></a>
@@ -149,36 +145,29 @@
         </section>
       </div>
       <!--Блок контактов -->
+      <div class="map-image clearfix">
+        <img src="img/map.png" width="1440" height="416" alt="Карта">
       <div class="container">
-        <div class="map clearfix">
-          <div class="map-contacts">
-            <strong>Nёrds design studio</strong>
-            <p>191186, Санкт-Петербург,<br> ул.Б.Конюшенная, д.19/8<span>тел. +7(812)275-75-75</span></p>
-            <a class="button" href="#">Напишите нам</a>
-          </div>
+        <div class="map-contacts">
+          <strong>Nёrds design studio</strong>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<span>тел. +7 (812) 275-75-75</span></p>
+          <a class="button" href="#">Напишите нам</a>
         </div>
       </div>
+    </div>
     </main>
     <!--Футер-->
     <footer class="container">
       <div class="footer-info clearfix">
-        <div class="footer-social">
-          <ul>
-            <li>
-              <a href="http://vk.com"><img src="img/vk-icon.png" width="78" height="78" alt="vk"></a>
-            </li>
-            <li>
-              <a href="http://facebook.com"><img src="img/fb-icon.png" width="78" height="78" alt="facebook"></a>
-            </li>
-            <li>
-              <a href="http://instagram.com"><img src="img/insta-icon.png" width="78" height="78" alt="instagram"></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-discount">
+        <section class="footer-social">
+          <a href="http://vk.com" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="http://facebook.com" class="social-btn social-btn-fb">Фэйсбук</a>
+          <a href="http://instagram.com" class="social-btn social-btn-inst">Инстаграм</a>
+        </section>
+        <section class="footer-discount">
           <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
           <p>Скидка 10% для друзей из социальных сетей.<p>
-        </div>
+        </section>
       </div>
     </footer>
      <!--Модальное окно "Напишите нам"-->
