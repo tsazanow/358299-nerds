@@ -171,16 +171,23 @@
       </div>
     </footer>
      <!--Модальное окно "Напишите нам"-->
-    <div class="write-us">
-      <form action="#" method="post">
-        <input type="text" name="user" value="Представьтесь пожалуйста" id="username">
-        <label for="username">Ваше имя:</label>
-        <input type="email" name="email-address" value="Для отправки ответа" id="user-email">
-        <label for="user-email">Ваш e-mail:</label>
-        <textarea name="comment" id="user-comment">В свободной форме</textarea>
-        <label for="user-comment">Текст письма:</label>
-        <button>Отправить</button>
-      </form>
-    </div>
+     <div class="modal-content">
+       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+       <h2 class="modal-content-title">Напишите нам</h2>
+       <form class="modal-form" action="#" method="post">
+         <div class="clearfix">
+           <label class="field"><b>Ваше имя:</b>
+             <input type="text" name="user" placeholder="Представьтесь пожалуйста">
+           </label>
+           <label class="field"><b>Ваш e-mail:</b>
+             <input type="email" name="email-address" placeholder="Для отправки ответа">
+           </label>
+           <label class="field"><b>Текст письма:</b>
+             <textarea name="comment" placeholder="В свободной форме"></textarea>
+           </label>
+         </div>
+         <button class="button btn-send">Отправить</button>
+       </form>
+     </div>
   </body>
 </html>
