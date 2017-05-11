@@ -189,7 +189,7 @@ header {
 .cart {
   background: url(../img/cart-icon.png) no-repeat left center;
   padding-left: 40px;
-  margin-left: 198px;
+  margin-left: 192px;
 }
 
 .catalog-title {
@@ -1039,7 +1039,6 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
 }
 
-
 .partners-list li {
   list-style-type: none;
   width: 1160px;
@@ -1056,12 +1055,6 @@ input[type="checkbox"]:checked + label::before {
   padding-top: 24px;
   width: 280px;
   line-height: 100px;
-  opacity: 0.2;
-}
-
-.partners-list li img {
-  vertical-align: middle;
-  width: auto;
 }
 
 .partner-4 {
@@ -1071,7 +1064,6 @@ input[type="checkbox"]:checked + label::before {
   padding-top: 35px;
   width: 260px;
   padding-right: 0;
-  opacity: 0.2;
 }
 
 .partner-1::after,
@@ -1084,6 +1076,7 @@ input[type="checkbox"]:checked + label::before {
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
+  opacity: 1;
 }
 
 .partner-1::after {
@@ -1098,17 +1091,17 @@ input[type="checkbox"]:checked + label::before {
   left: 879px;
 }
 
-.partner-1:hover,
-.partner-2:hover,
-.partner-3:hover,
-.partner-4:hover {
+.partners-list li img {
+  vertical-align: middle;
+  width: auto;
+  opacity: 0.2;
+}
+
+.partners-list li img:hover {
   opacity: 1;
 }
 
-.partner-1:active,
-.partner-2:active,
-.partner-3:active,
-.partner-4:active {
+.partners-list li img:active {
   opacity: 0.1;
 }
 
@@ -1214,7 +1207,7 @@ input[type="checkbox"]:checked + label::before {
   opacity: 0.3;
 }
 
-.social-btn::before {
+.social-btn::after {
   content: "";
   position: absolute;
   background-image: url(../img/sprite.png);
@@ -1222,21 +1215,21 @@ input[type="checkbox"]:checked + label::before {
   transform: translate(-50%, 50%);
 }
 
-.social-btn-vk::before {
+.social-btn-vk::after {
   top: 30%;
   width: 26px;
   height: 15px;
   background-position: -20px -515px;
 }
 
-.social-btn-fb::before {
+.social-btn-fb::after {
   top: 25%;
   width: 12px;
   height: 22px;
   background-position: -20px -262px;
 }
 
-.social-btn-inst::before {
+.social-btn-inst::after {
   top: 25%;
   width: 21px;
   height: 21px;
@@ -1357,7 +1350,7 @@ input[type="checkbox"]:checked + label::before {
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #444444;
+  color: #bababa;
 }
 
 .modal-form textarea {
@@ -1369,9 +1362,16 @@ input[type="checkbox"]:checked + label::before {
   padding-bottom: 20px;
 }
 
+.modal-form input:hover,
+.modal-form textarea:hover {
+  border-color: #b4b9bb;
+  color: #a1a1a1;
+}
+
 .modal-form input:focus,
 .modal-form textarea:focus {
   border-color: #000000;
+  color: #444444;
 }
 
 .modal-form .field {
