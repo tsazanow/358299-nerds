@@ -578,7 +578,6 @@ header {
 .filter-kind li {
   list-style-type: none;
   padding-bottom: 16px;
-  color: #283136;
 }
 
 
@@ -592,7 +591,6 @@ header {
   padding-bottom: 15px;
 }
 
-
 input[type="radio"] {
   display: none;
 }
@@ -604,13 +602,7 @@ input[type="radio"] + label {
   padding-bottom: 0;
   position: relative;
   cursor: pointer;
-  opacity: 1;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  color: #283136;
-}
-
-input[type="radio"] + label:hover {
-  opacity: 1;
   color: #000000;
 }
 
@@ -625,6 +617,7 @@ input[type="radio"] + label::before {
   width: 25px;
   height: 25px;
   background-position: -20px -385px;
+  opacity: 0.4;
 }
 
 input[type="radio"]:checked + label::before {
@@ -638,6 +631,11 @@ input[type="radio"]:checked + label::before {
   width: 25px;
   height: 25px;
   background-position: -20px -450px;
+  opacity: 0.4;
+}
+
+input[type="radio"] + label:hover {
+  opacity: 1;
 }
 
 input[type="checkbox"] {
@@ -651,13 +649,7 @@ input[type="checkbox"] + label {
   padding-top: 0;
   position: relative;
   cursor: pointer;
-  opacity: 1;
-  color: #283136;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-}
-
-input[type="checkbox"] + label:hover {
-  opacity: 1;
   color: #000000;
 }
 
@@ -672,7 +664,7 @@ input[type="checkbox"] + label::before {
   width: 23px;
   height: 23px;
   background-position: -20px -75px;
-  color: #b8b8b8;
+  opacity: 0.4;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -685,7 +677,11 @@ input[type="checkbox"]:checked + label::before {
   width: 27px;
   height: 23px;
   background-position: -20px -138px;
-  color: #b8b8b8;
+  opacity: 0.4;
+}
+
+input[type="checkbox"] + label:hover {
+  opacity: 1;
 }
 
 .filter-feature li label {
@@ -1178,6 +1174,7 @@ input[type="checkbox"]:checked + label::before {
 
 .partners-list li {
   list-style-type: none;
+  padding: 0;
 }
 
 .partner-1,
@@ -1194,6 +1191,10 @@ input[type="checkbox"]:checked + label::before {
 .partner-1 {
   width: auto;
   margin: 0;
+  margin-left: -9px;
+  margin-right: 10px;
+  padding: 0;
+  padding-top: 28px;
   padding-left: 0px;
   padding-right: 20px;
 }
