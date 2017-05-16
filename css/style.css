@@ -3,9 +3,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  color: #283136;
   font-weight: normal;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+  color: #283136;
 }
 
 .sprite {
@@ -68,8 +68,8 @@ body {
   background-position: -20px -515px;
 }
 
-h1.slider-title,
-h1.catalog-title {
+.slider-title,
+.catalog-title {
   font-size: 55px;
   line-height: 55px;
   color: #000000;
@@ -88,19 +88,19 @@ h3.footer-title {
 }
 
 .button {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 18px;
-  border-radius: 2px;
-  background-color: #fb565a;
   display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 0;
+  width: 240px;
   padding-top: 18px;
   padding-bottom: 16px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
   text-align: center;
-  width: 240px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-color: #fb565a;
 }
 
 .clearfix::after {
@@ -122,8 +122,8 @@ header {
 
 .nav {
   padding: 0;
-  margin: 0;
   padding-top: 50px;
+  margin: 0;
 }
 
 .main-logo {
@@ -175,38 +175,25 @@ header {
 }
 
 .nav-list a {
-  text-transform: uppercase;
   color: #000000;
   font-weight: 500;
+  text-transform: uppercase;
   text-decoration: none;
-}
-
-.nav-list a:hover {
-  color: #fb565a;
-}
-
-.nav-list a:active {
-  color: #afafaf;
-}
-
-.nav-list a.active {
-  border-bottom: 2px solid #fb565a;
-  padding-bottom: 9px;
 }
 
 .cart {
   float: right;
-  position: relative;
   width: 120px;
+  position: relative;
   margin: 0 auto;
-  padding: 0;
-  padding-left: 0px;
   margin-left: 40px;
   margin-bottom: 10px;
   margin-top: 31px;
+  padding: 0;
+  padding-left: 0px;
 }
 
-.cart::before {
+.cart a::before {
   content: "";
   display: block;
   position: absolute;
@@ -220,17 +207,33 @@ header {
 }
 
 .cart a {
-  text-transform: uppercase;
   color: #000000;
   font-weight: 500;
+  text-transform: uppercase;
   text-decoration: none;
   padding-left: 45px;
 }
 
+.nav-list a:hover,
+.cart a:hover {
+  color: #fb565a;
+}
+
+.nav-list a:active,
+.cart a:active {
+  color: #afafaf;
+}
+
+.nav-list a.active,
+.cart a.active {
+  border-bottom: 2px solid #fb565a;
+  padding-bottom: 9px;
+}
+
 .catalog-title {
+  width: auto;
   margin: 0;
   padding: 0;
-  width: auto;
   padding-top: 77px;
   padding-left: 216px;
   padding-bottom: 109px;
@@ -244,8 +247,8 @@ header {
 
 .slider-header {
   margin: 0 auto;
-  padding: 0;
   margin-bottom: 80px;
+  padding: 0;
 }
 
 .slider {
@@ -268,15 +271,15 @@ header {
 
 .slider-switch span {
   display: inline-block;
+  vertical-align: middle;
+  position: relative;
   width: 8px;
   height: 8px;
   margin: 0 6px;
   background-color: #ffffff;
   border: 5px solid #ffffff;
-  vertical-align: top;
   border-radius: 50%;
   cursor: pointer;
-  position: relative;
 }
 
 .slider-switch .active {
@@ -311,17 +314,17 @@ header {
 
 .slider-title {
   margin: 0;
-  padding: 0;
   margin-bottom: 25px;
+  padding: 0;
   font-weight: 500;
 }
 
 .slider p {
   margin-bottom: 38px;
-  padding-right: 30px;
+  padding-right: 82px;
   padding-top: 3px;
-  color: #283136;
   line-height: 24px;
+  color: #283136;
 }
 
 .slider a.button:hover {
@@ -349,7 +352,7 @@ header {
 .slider-banner:nth-child(3) {
   background-image: url(../img/slide3.png);
   background-repeat: no-repeat;
-  background-position: 400px 0px;
+  background-position: 400px 18px;
 }
 
 .slider-banner {
@@ -371,7 +374,7 @@ header {
 
 .features-item {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: left;
   width: 300px;
   padding-left: 100px;
@@ -399,7 +402,6 @@ header {
   color: #283136;
   padding-right: 34px;
   margin-bottom: 30px;
-  padding-left: 0;
 }
 
 .features-item a.button {
@@ -445,14 +447,13 @@ header {
   transform: translateY(3px);
 }
 
-
 /*КАТАЛОГ ЛЕВАЯ СТОРОНА*/
 
 .main-leftside {
   float: left;
+  width: 260px;
   margin: 0;
   padding: 0;
-  width: 260px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -493,11 +494,11 @@ header {
   left: 0px;
   width: 4px;
   height: 4px;
-  cursor: pointer;
   border: 8px solid #fff;
   border-radius: 50%;
   background: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
 }
 
 .range-controls .toggle-min {
@@ -512,17 +513,17 @@ header {
   width: 58px;
   padding: 8px 12px;
   margin-left: 10px;
-  background-color: #eeeeee;
   font-size: 16px;
+  line-height: 22px;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
   font-weight: 300;
   font-style: normal;
   text-align: center;
-  color: #283136;
-  line-height: 22px;
   text-transform: uppercase;
+  color: #283136;
   border: none;
   border-radius: 3px;
+  background-color: #eeeeee;
 }
 
 .price-filter label {
@@ -543,26 +544,26 @@ header {
 }
 
 .filter-title {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
   text-transform: uppercase;
 }
 
 .filter-title.range {
   margin-top: -3px;
-  padding-top: 0;
   margin-bottom: 49px;
+  padding-top: 0;
   padding-left: 3px;
   padding-right: 0;
 }
 
 .filter-title.grid {
-  padding-left: 0;
   margin-bottom: 17px;
+  padding-left: 0;
 }
 
 .filter-title.feature {
@@ -580,15 +581,14 @@ header {
   padding-bottom: 16px;
 }
 
-
 .filter-feature ul {
-  padding-left: 0;
   margin-bottom: 32px;
+  padding-left: 0;
 }
 
 .filter-feature li {
-  list-style-type: none;
   padding-bottom: 15px;
+  list-style-type: none;
 }
 
 input[type="radio"] {
@@ -597,13 +597,13 @@ input[type="radio"] {
 
 input[type="radio"] + label {
   display: block;
+  position: relative;
   margin: 2px 0;
   padding-left: 36px;
   padding-bottom: 0;
-  position: relative;
-  cursor: pointer;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  color: #000000;
+  color: #283136;
+  cursor: pointer;
 }
 
 input[type="radio"] + label::before {
@@ -612,12 +612,11 @@ input[type="radio"] + label::before {
   position: absolute;
   top: -3px;
   left: 1px;
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
   width: 25px;
   height: 25px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
   background-position: -20px -385px;
-  opacity: 0.4;
 }
 
 input[type="radio"]:checked + label::before {
@@ -626,15 +625,23 @@ input[type="radio"]:checked + label::before {
   position: absolute;
   top: -3px;
   left: 1px;
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
   width: 25px;
   height: 25px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
   background-position: -20px -450px;
+}
+
+label::before {
   opacity: 0.4;
 }
 
+label:hover::before {
+  opacity: 1;
+}
+
 input[type="radio"] + label:hover {
+  color: #000000;
   opacity: 1;
 }
 
@@ -644,13 +651,13 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label {
   display: block;
+  position: relative;
   margin: 2px 0;
   padding-left: 37px;
   padding-top: 0;
-  position: relative;
-  cursor: pointer;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  color: #000000;
+  color: #283136;
+  cursor: pointer;
 }
 
 input[type="checkbox"] + label::before {
@@ -659,12 +666,11 @@ input[type="checkbox"] + label::before {
   position: absolute;
   top: -2px;
   left: 0;
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
   width: 23px;
   height: 23px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
   background-position: -20px -75px;
-  opacity: 0.4;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -672,32 +678,40 @@ input[type="checkbox"]:checked + label::before {
   position: absolute;
   top: -2px;
   left: 0;
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
   width: 27px;
   height: 23px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
   background-position: -20px -138px;
+}
+
+label::before {
   opacity: 0.4;
 }
 
-input[type="checkbox"] + label:hover {
+label:hover::before {
+  opacity: 1;
+}
+
+input[type="checkbox"] + label {
+  color: #000000;
   opacity: 1;
 }
 
 .filter-feature li label {
-  padding-top: 0;
-  padding-bottom: 0;
   margin-top: 4px;
   margin-bottom: 1px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .button.grey {
-  background-color: #eeeeee;
-  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  color: #000000;
-  font-weight: 500;
   width: 260px;
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  color: #000000;
   border: 0;
+  background-color: #eeeeee;
   cursor: pointer;
 }
 
@@ -715,11 +729,11 @@ input[type="checkbox"] + label:hover {
 
 .main-rightside {
   float: right;
-  margin: 0;
-  padding: 0;
   width: 760px;
+  margin: 0;
   margin-left: 100px;
   margin-bottom: 65px;
+  padding: 0;
 }
 
 .sort {
@@ -730,11 +744,11 @@ input[type="checkbox"] + label:hover {
 
 .sort-left {
   float: left;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 18px;
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .sort-right {
@@ -744,47 +758,46 @@ input[type="checkbox"] + label:hover {
 
 .sort-right a {
   display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
+  vertical-align: middle;
   vertical-align: bottom;
-  text-align: left;
-  font-size: 14px;
-  line-height: 18px;
   margin: 0;
-  padding: 0;
   margin-left: 6px;
   margin-right: 12px;
+  padding: 0;
   padding-right: 0px;
   padding-left: 0px;
-  opacity: 0.3;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
   color: #000000;
+  opacity: 0.3;
 }
 
 .sort-right a:first-child {
-  padding-left: 0;
-  padding-right: 7px;
   margin-right: 8px;
   margin-left: 0;
+  padding-right: 7px;
+  padding-left: 0;
 }
 
 .sort-right a:nth-child(2) {
   padding-right: 3px;
 }
 
-
 .sort-right a:nth-child(3) {
   padding-right: 4px;
 }
-
 
 .sort-right .down {
   vertical-align: middle;
   margin-left: 30px;
   margin-right: 10px;
   padding-left: 0;
-  font-size: 0;
   width: 9px;
   height: 9px;
+  font-size: 0;
   background-image: url(../img/sort.png);
   background-repeat: no-repeat;
   opacity: 1;
@@ -795,16 +808,15 @@ input[type="checkbox"] + label:hover {
   vertical-align: middle;
   margin-right: 0;
   padding-left: 1px;
-  font-size: 0;
   width: 9px;
   height: 9px;
+  font-size: 0;
   background-image: url(../img/sort.png);
   transform: rotate(180deg);
   background-repeat: no-repeat;
   opacity: 0.2;
   cursor: pointer;
 }
-
 
 .sort-right a.active {
   color: #000000;
@@ -819,7 +831,6 @@ input[type="checkbox"] + label:hover {
   opacity: 1;
 }
 
-
 /*БЛОК МАКЕТОВ*/
 
 .samples ul {
@@ -829,6 +840,7 @@ input[type="checkbox"] + label:hover {
 
 .samples-item li {
   float: left;
+  position: relative;
   width: 360px;
   height: 574px;
   list-style-type: none;
@@ -839,35 +851,57 @@ input[type="checkbox"] + label:hover {
   padding: 0;
   padding-top: 0;
   padding-bottom: 0;
-  position: relative;
 }
 
 .window-header {
   position: absolute;
+  width: 360px;
+  height: 40px;
   top: -40px;
   left: 0px;
   padding: 0;
   margin: 0;
-  width: 360px;
-  height: 40px;
   background-color: #e5e5e5;
   border-radius: 3px 3px 0 0;
 }
 
-.window-header span {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  margin-right: 5px;
-  margin-top: 13px;
+.window-header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 11px;
+  left: 23px;
   width: 14px;
   height: 14px;
+  margin-left: -7px;
   border-radius: 50%;
   background-color: #ffffff;
 }
 
-.window-header span:first-child {
-  margin-left: 16px;
+.window-header::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 11px;
+  left: 59px;
+  width: 14px;
+  height: 14px;
+  margin-left: -20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.sample-image::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -29px;
+  left: 69px;
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .samples-item li:nth-child(2n) {
@@ -887,14 +921,13 @@ input[type="checkbox"] + label:hover {
 
 .window-info {
   position: absolute;
+  display: block;
   bottom: 0px;
   left: 0;
   width: 360px;
   height: 231px;
-  background-color: #eeeeee;
-  display: block;
   text-align: center;
-  vertical-align: middle;
+  background-color: #eeeeee;
 }
 
 .samples-item li:hover > .window-header {
@@ -914,32 +947,33 @@ input[type="checkbox"] + label:hover {
 }
 
 .window-info .sample-name {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
   display: block;
   margin-top: 27px;
   margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .window-info p {
   display: inline-block;
+  vertical-align: top;
   text-align: center;
-  color: #666666;
+  width: auto;
+  margin-bottom: 28px;
+  padding-right: 80px;
+  padding-left: 80px;
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 28px;
-  width: auto;
-  padding-left: 80px;
-  padding-right: 80px;
+  color: #666666;
 }
 
 .window-info .button {
+  width: 200px;
   margin-left: 81px;
   margin-bottom: 45px;
-  width: 200px;
 }
 
 .window-info .button:hover {
@@ -955,11 +989,11 @@ input[type="checkbox"] + label:hover {
 
 .samples-page-left {
   float: left;
-  margin: 0;
-  padding: 0;
-  margin-top: -13px;
-  margin-bottom: -6px;
   width: 760px;
+  margin: 0;
+  margin-top: -13px;
+  padding: 0;
+  margin-bottom: -6px;
 }
 
 .page {
@@ -967,22 +1001,23 @@ input[type="checkbox"] + label:hover {
   vertical-align: middle;
   text-align: center;
   background-color: #eeeeee;
-  color: #000000;
+  min-width: 47px;
+  height: 47px;
+  margin: 0;
+  margin-left: 4px;
+  padding: 0;
   font-size: 16px;
+  line-height: 47px;
   text-decoration: none;
   text-transform: uppercase;
   border: 3px solid #eeeeee;
   border-radius: 3px;
-  line-height: 47px;
-  min-width: 47px;
-  height: 47px;
-  margin: 0;
-  padding: 0;
-  margin-left: 4px;
+  color: #000000;
 }
 
 .page.active {
   background-color: #ffffff;
+  border-color: #dbdbdb;
 }
 
 .page:hover {
@@ -993,7 +1028,7 @@ input[type="checkbox"] + label:hover {
 .page:active {
   background-color: #d5d5d5;
   border-color: #d5d5d5;
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
   transform: translateY(3px);
 }
 
@@ -1009,8 +1044,8 @@ input[type="checkbox"] + label:hover {
 
 .about {
   margin: 0;
-  padding: 0;
   margin-bottom: 55px;
+  padding: 0;
 }
 
 .about-left {
@@ -1053,8 +1088,6 @@ input[type="checkbox"] + label:hover {
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .about-jobs b {
@@ -1066,32 +1099,28 @@ input[type="checkbox"] + label:hover {
 
 .about-jobs-list {
   margin: 0;
-  padding: 0;
-  margin-right: 0;
   margin-left: 36px;
-  margin-bottom: 0;
   margin-top: 17px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 
 .about-jobs-list li {
   display: block;
+  position: relative;
+  margin-right: 0;
   padding-bottom: 18px;
   padding-top: 7px;
   padding-left: 0;
   padding-right: 0;
-  margin-right: 0;
   list-style-type: none;
-  position: relative;
 }
 
 .about-jobs-list li::before {
   content: "";
   position: absolute;
+  display: block;
   left: -35px;
   top: 18px;
-  display: block;
   width: 25px;
   height: 2px;
   background-color: #fb565a;
@@ -1103,23 +1132,23 @@ input[type="checkbox"] + label:hover {
 }
 
 .about-profits b {
+  padding-left: 57px;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  padding-left: 57px;
 }
 
 .about-profits-list {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   padding-top: 50px;
   padding-left: 40px;
+  list-style-type: none;
 }
 
 .about-profits-list li {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
   padding-right: 13px;
   font-size: 16px;
   line-height: 18px;
@@ -1143,7 +1172,6 @@ input[type="checkbox"] + label:hover {
   font-size: 29px;
 }
 
-
 .about-profits-list li:nth-child(2) {
   padding-left: 3px;
 }
@@ -1152,18 +1180,17 @@ input[type="checkbox"] + label:hover {
   padding-left: 3px;
 }
 
-
 /*СПОНСОРЫ*/
 
 .partners {
   display: block;
+  position: relative;
   height: 180px;
   margin: 0 auto;
   margin-bottom: 80px;
   padding: 0;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-  position: relative;
 }
 
 .partners-list ul {
@@ -1173,8 +1200,8 @@ input[type="checkbox"] + label:hover {
 }
 
 .partners-list li {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 
 .partner-1,
@@ -1211,11 +1238,11 @@ input[type="checkbox"] + label:hover {
 
 .partner-4 {
   float: left;
+  width: auto;
   margin: 0 auto;
   padding: 0;
   padding-left: 123px;
   padding-top: 35px;
-  width: auto;
   padding-right: 0;
 }
 
@@ -1223,9 +1250,9 @@ input[type="checkbox"] + label:hover {
 .partner-2::after,
 .partner-3::after {
   content: "";
+  display: block;
   position: absolute;
   top: 64px;
-  display: block;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
@@ -1245,8 +1272,8 @@ input[type="checkbox"] + label:hover {
 }
 
 .partners-list li img {
-  vertical-align: middle;
   width: auto;
+  vertical-align: middle;
   opacity: 0.2;
 }
 
@@ -1267,22 +1294,25 @@ input[type="checkbox"] + label:hover {
   margin: 0 auto;
   padding: 0;
   background-image: url(../img/map.jpg);
+  background-color: #eeeeee;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .map-contacts {
   float: left;
-  width: auto;
-  background-color: #ffffff;
+  width: 270px;
   margin: 0 auto;
   margin-top: 53px;
+  margin-right: 0;
   padding: 0;
   padding-top: 49px;
   padding-left: 50px;
+  padding-right: 0;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
+  background-color: #ffffff;
 }
 
 .map-contacts strong {
@@ -1292,18 +1322,19 @@ input[type="checkbox"] + label:hover {
 }
 
 .map-contacts p {
-  padding: 0;
   margin: 0;
   margin-top: 23px;
   margin-left: 2px;
+  padding: 0;
+  padding-right: 67px;
   color: #666666;
 }
 
 .map-contacts span {
   display: block;
   margin: 0;
-  padding: 0;
   margin-top: 18px;
+  padding: 0;
 }
 
 .map-contacts a.button {
@@ -1329,24 +1360,24 @@ input[type="checkbox"] + label:hover {
 
 .footer-social {
   float: left;
-  padding: 0;
-  margin: 0 auto;
   width: 280px;
+  margin: 0 auto;
+  padding: 0;
   text-align: center;
 }
 
 .social-btn {
   display: inline-block;
-  margin-left: 8px;
-  margin-top: -7px;
+  position: relative;
+  vertical-align: top;
   width: 79px;
   height: 79px;
+  margin-left: 8px;
+  margin-top: -7px;
   font-size: 0;
-  vertical-align: top;
   text-decoration: none;
-  background-color: #e1e1e1;
   border-radius: 50%;
-  position: relative;
+  background-color: #e1e1e1;
 }
 
 .social-btn-vk {
@@ -1395,8 +1426,8 @@ input[type="checkbox"] + label:hover {
 .footer-discount {
   float: left;
   width: 700px;
-  padding: 0;
   margin-left: 102px;
+  padding: 0;
   padding-left: 20px;
 }
 
@@ -1407,10 +1438,10 @@ input[type="checkbox"] + label:hover {
 }
 
 .footer-discount p {
+  margin-top: 11px;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-  margin-top: 11px;
 }
 
 /*Всплывающая форма*/
@@ -1420,6 +1451,8 @@ input[type="checkbox"] + label:hover {
   position: fixed;
   left: 50%;
   bottom: 172px;
+  width: 760px;
+  height: 580px;
   margin: 0;
   margin-left: -480px;
   margin-bottom: 20px;
@@ -1427,8 +1460,6 @@ input[type="checkbox"] + label:hover {
   padding-bottom: 10px;
   padding-left: 100px;
   padding-right: 100px;
-  width: 760px;
-  height: 580px;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 30px 50px rgba(92, 93, 93, 0.7);
@@ -1477,12 +1508,12 @@ input[type="checkbox"] + label:hover {
 }
 
 .modal-content-title {
-  font-size: 45px;
-  line-height: 45px;
-  padding: 0;
   margin: 0;
   margin-top: 65px;
   margin-bottom: 40px;
+  padding: 0;
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .modal-content .modal-form {
@@ -1501,12 +1532,12 @@ input[type="checkbox"] + label:hover {
   padding-left: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  border: 2px solid #d7dcde;
-  border-radius: 2px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
   color: #bababa;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
 }
 
 .modal-form textarea {
@@ -1534,9 +1565,9 @@ input[type="checkbox"] + label:hover {
   float: left;
   width: 360px;
   margin: 0;
-  padding: 0;
   margin-bottom: 30px;
   margin-right: 40px;
+  padding: 0;
 }
 
 .modal-form .field:nth-child(2) {
@@ -1550,9 +1581,9 @@ input[type="checkbox"] + label:hover {
 
 .button.btn-send {
   width: 260px;
+  margin-top: 17px;
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
   border: 0;
-  margin-top: 17px;
   cursor: pointer;
 }
 
