@@ -248,7 +248,10 @@ header {
 
 .slider-header {
   margin: 0 auto;
+  margin-bottom: 80px;
   padding: 0;
+  min-height: 430px;
+  overflow-y: scroll;
 }
 
 .slider {
@@ -322,7 +325,7 @@ header {
 
 .slider p {
   width: auto;
-  height: auto;
+  height: 100%;
   margin-bottom: 38px;
   padding-right: 82px;
   padding-top: 3px;
